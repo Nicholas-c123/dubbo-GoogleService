@@ -42,7 +42,7 @@ public class GoogleServiceImpl implements GoogleService {
             limit = 20;
         for (Element e : elements)
             if (res.size() < limit)
-                res.add(e.html());
+                res.add(e.html() + s);
             else
                 break;
         return res;
